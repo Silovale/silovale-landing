@@ -1,0 +1,31 @@
+
+h1{
+    color:#000000;
+    font-size: 350%;
+    
+}
+
+h1.textito{
+    color:#507ba6;
+    font-size: 450%;
+    font-weight: bold;
+    
+}
+
+p{
+    color:#000000;
+    font-size: 110%;
+}
+
+
+a{
+    display:  inline-block;
+    margin-top: 20px;
+    padding: 8px 40px;
+    background: #507ba6;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
