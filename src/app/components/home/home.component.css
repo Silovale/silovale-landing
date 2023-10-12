@@ -48,7 +48,7 @@ section{
 .service-box {
 	background: #f0e5f1;
     border-radius: 3%;
-	border-top: 3px dashed #507ba6;
+	
 	padding: 40px 20px;
 }
 
@@ -87,7 +87,7 @@ background:#ffffff;
 }
 
 h2{
-    color:#B166BB;
+    color:#507ba6;
     font-size: 50px;
     font-weight: bold;
 }
