@@ -20,6 +20,7 @@ p{
 
 a{
     display:  inline-block;
+    position: relative;
     margin-top: 20px;
     padding: 8px 40px;
     background: #507ba6;
@@ -29,3 +30,65 @@ a{
     letter-spacing: 1px;
     text-decoration: none;
 }
+
+
+
+
+
+section{
+    position: relative;
+    width:100%;
+    padding:  100px 40px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    background: #fff;
+}
+
+.service-box {
+	background: #f0e5f1;
+    border-radius: 3%;
+	border-top: 3px dashed #507ba6;
+	padding: 40px 20px;
+}
+
+.service-box:hover {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+	margin-top: -20px;
+}
+
+.service-icon {
+	margin-bottom: 20px;
+}	
+
+.service-desc h5 {
+	text-transform: uppercase;
+	font-weight:bolder;
+	color: #507ba6;
+	font-size: 21px;
+	margin-bottom: 10px;
+}
+.service-desc .divider-header {
+	margin-bottom: 30px;
+}
+.bg-gray{
+background:#ffffff;
+}
+
+.btn {
+    background: #92b5d8;
+    border-radius: 10px;
+}
+
+.newBox{
+    padding-left: 5%;
+}
+
+h2{
+    color:#B166BB;
+    font-size: 50px;
+    font-weight: bold;
+}
+
