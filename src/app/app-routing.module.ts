@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ContactComponent } from './components/contact/contact.component';
 
+
 const routes: Routes = [
   {
     path: "",
