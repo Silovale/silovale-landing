@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { SignComponent } from './sign/sign.component';
 import { PasswordrecoveryComponent } from './passwordrecovery/passwordrecovery.component';
+import { AuthenticationComponent } from '../authentication.component';
 
 
 
@@ -10,7 +11,8 @@ import { PasswordrecoveryComponent } from './passwordrecovery/passwordrecovery.c
   declarations: [
     LoginComponent,
     SignComponent,
-    PasswordrecoveryComponent
+    PasswordrecoveryComponent,
+    AuthenticationComponent
   ],
   imports: [
     CommonModule
