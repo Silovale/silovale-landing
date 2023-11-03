@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { SignComponent } from './sign/sign.component';
 import { PasswordrecoveryComponent } from './passwordrecovery/passwordrecovery.component';
-import { AuthenticationComponent } from '../authentication.component';
-
-
+import { AuthenticationRoutingModule } from './authentication-routing.module';
+import { AuthenticationComponent } from './authentication.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,9 @@ import { AuthenticationComponent } from '../authentication.component';
     AuthenticationComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AuthenticationRoutingModule,
+    FormsModule
   ]
 })
 export class AuthenticationModule { }

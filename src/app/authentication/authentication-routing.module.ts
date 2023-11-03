@@ -1,31 +1,31 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { BlogComponent } from './components/blog/blog.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { PublicityComponent } from './components/publicity/publicity.component';
+import { AuthenticationComponent } from './authentication.component';
+import { LoginComponent } from './login/login.component';
+import { SignComponent } from './sign/sign.component';
+import { PasswordrecoveryComponent } from './passwordrecovery/passwordrecovery.component';
+
 
 const routes: Routes = [
   {
     path: "",
-    component: HomeComponent
+    component: AuthenticationComponent,
+    children: [
+      {
+        path: 'login', component: LoginComponent
+      },
+      {
+        path: 'sign', component: SignComponent
+      },
+      {
+        path: 'passwordrecovery', component: PasswordrecoveryComponent,
+      }
+    ]
   },
-  {
-    path: "blog",
-    component: BlogComponent
-  },
-  {
-    path: "contact",
-    component: ContactComponent
-  },
-  {
-    path: "publicity",
-    component: PublicityComponent
-  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AuthenticationRoutingModule { }
