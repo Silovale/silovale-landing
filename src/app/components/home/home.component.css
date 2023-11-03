@@ -6,7 +6,7 @@ h1{
 }
 
 h1.textito{
-    color:#507ba6;
+    color:#fff;
     font-size: 450%;
     font-weight: bold;
     
@@ -23,7 +23,7 @@ a{
     position: relative;
     margin-top: 20px;
     padding: 8px 40px;
-    background: #507ba6;
+    background: #ddd9d9;
     color: #fff;
     border-radius: 20px;
     font-weight: 500;
