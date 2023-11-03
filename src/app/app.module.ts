@@ -1,4 +1,4 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,6 +9,9 @@ import { HomeComponent } from './components/home/home.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PublicityComponent } from './components/publicity/publicity.component';
+import { AuthenticationRoutingModule } from './authentication/authentication-routing.module';
+
+
 
 @NgModule({
   declarations: [
@@ -18,13 +21,17 @@ import { PublicityComponent } from './components/publicity/publicity.component';
     HomeComponent,
     BlogComponent,
     ContactComponent,
-    PublicityComponent
+    PublicityComponent,
+   
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuthenticationRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
