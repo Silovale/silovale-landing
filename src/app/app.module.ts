@@ -18,7 +18,7 @@ import { PublicityComponent } from './components/publicity/publicity.component';
     HomeComponent,
     BlogComponent,
     ContactComponent,
-    PublicityComponent
+    PublicityComponent,
   ],
   imports: [
     BrowserModule,
