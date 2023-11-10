@@ -1,38 +1,41 @@
-	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg bg-body-tertiary"  style="position:relative">
-    <div class="container">
-      <a class="navbar-brand" href="/"><img src="assets/imagenes/newlogo.png" class="img-fluid" width="240"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="position:relative">
+  <div class="container">
+    <a class="navbar-brand" href="/"><img src="assets/imagenes/newlogo.png" class="img-fluid" width="240"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
+      aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse"></div> 
-       <div class="collapse navbar-collapse" id="navbarsExample07">
-        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-          <li class="px-2">
-            <a class="nav-link"  href="#"style="font-size: 1.5rem">Inicio</a>
-          </li>
-          <li class="px-2">
-            <a class="nav-link"  href="#" [routerLink]="['/blog']"style="font-size: 1.5rem">Productos</a>
-          </li>
-          <li class="px-2">
-            <a class="nav-link"  href="#" [routerLink]="['/contact']"style="font-size: 1.5rem">Contacto</a>
-          </li>
-          <li class="px-2">
-            <a class="nav-link" href="#" [routerLink]="['/publicity']"style="font-size: 1.5rem">Publicidad</a>
-          </li>
-        </ul>
-      </div>
-      <form class="btn"> 
-        <button class="btn btn-outline-primary" type="submit"[routerLink]="['/registro']"style="font-size: 1.1rem">Registrarme</button>
-      </form>
-      <form class="btn">
-        <button class="btn btn-outline-primary" type="submit"[routerLink]="['/login']"style="font-size: 1.1rem">Iniciar Sesión</button>
-      </form>
-      <div class="shopping px-4">
-        <img src="assets/imagenes/person-circle.svg" width=40px>
-        
+    <div class="collapse navbar-collapse"></div>
+    <div class="collapse navbar-collapse" id="navbarsExample07">
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        <li class="px-2">
+          <a class="nav-link" href="#" style="font-size: 1.5rem">Inicio</a>
+        </li>
+        <li class="px-2">
+          <a class="nav-link" href="#" [routerLink]="['/blog']" style="font-size: 1.5rem">Productos</a>
+        </li>
+        <li class="px-2">
+          <a class="nav-link" href="#" [routerLink]="['/contact']" style="font-size: 1.5rem">Contacto</a>
+        </li>
+        <li class="px-2">
+          <a class="nav-link" href="#" [routerLink]="['/publicity']" style="font-size: 1.5rem">Publicidad</a>
+        </li>
+      </ul>
     </div>
+    <form class="btn">
+      <button class="btn btn-outline-primary" type="submit" [routerLink]="['/registro']"
+        style="font-size: 1.1rem">Registrarme</button>
+    </form>
+    <form class="btn">
+      <button class="btn btn-outline-primary" type="submit" [routerLink]="['/login']" style="font-size: 1.1rem">Iniciar
+        Sesión</button>
+    </form>
+    <div class="shopping px-4">
+      <img src="assets/imagenes/person-circle.svg" width=40px>
+
     </div>
-  </nav>
-  <!-- End Navigation --> 
+  </div>
+</nav>
+<!-- End Navigation -->
