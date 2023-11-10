@@ -6,13 +6,15 @@ import { PasswordrecoveryComponent } from './passwordrecovery/passwordrecovery.c
 import { AuthenticationRoutingModule } from './authentication-routing.module';
 import { AuthenticationComponent } from './authentication.component';
 import { FormsModule } from '@angular/forms';
+import { RegistroComponent } from './registro/registro.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
     SignComponent,
     PasswordrecoveryComponent,
-    AuthenticationComponent
+    AuthenticationComponent,
+    RegistroComponent
   ],
   imports: [
     CommonModule,
