@@ -8,7 +8,14 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  height: 100vh;
+  height: 854px;
+}
+#form1{
+  margin-left: 40px;
+}
+
+#form2{
+  margin-left: 120px;
 }
 
 a {
@@ -23,18 +30,9 @@ h2 {
   font-size: 33px;
   font-weight: 600;
   display:inline-block;
-  margin: 40px 8px 10px 8px; 
+  margin: 10px 8px 10px 8px;
   color: #cccccc;
 }
-h3 {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 20;
-  display:inline-block;
-  margin: 20px 8px 10px 8px; 
-  color: #cccccc;
-}
-
 
 /* STRUCTURE */
 
@@ -42,11 +40,20 @@ h3 {
   position: relative;
   display: flex;
   align-items: center;
-  flex-direction: column; 
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 100%;
   min-height: 100%;
   padding: 20px;
+
+  /*display: flex;
+  align-items: center;
+  flex-direction: column;
+  /*margin-top: auto;
+  justify-content: center;
+  width: 100%;
+  min-height: 90%;
+  padding: 10px;*/
 }
 
 
@@ -55,11 +62,11 @@ h3 {
   border-radius: 10px 10px 10px 10px;
   background: #F0E5F1;
   padding: 30px;
-  height : 550px;
+  height : 600px;
   width: 90%;
   max-width: 1200px;
   position: relative;
-  padding: 100px;
+  /*: 100px;*/
   -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   text-align: center;
@@ -68,9 +75,9 @@ h3 {
   flex-wrap: wrap;
 }
 
-#formContent> div {
+/*#formContent> div {
   width: 50%;
-}
+}*/
 
 #formFooter {
   background-color: #c9a5cc;
@@ -80,8 +87,6 @@ h3 {
   -webkit-border-radius: 0 0 7px 7px;
   border-radius: 0 0 7px 7px;
 }
-
-
 
 /* TABS */
 
@@ -102,9 +107,9 @@ input[type=submit], input[type=reset], input[type=button]  {
   padding: 15px 80px;
   text-align: center;
   height: 300px;
-  width: 90%;
+  width: 450px;
   text-decoration: none;
-  align-items: start;
+  align-items: center;
   display: flex;
   font-size: 24px;
   -webkit-box-shadow: 0 10px 30px 0 rgba(109, 125, 133, 0.4);
@@ -120,7 +125,7 @@ input[type=submit], input[type=reset], input[type=button]  {
 }
 
 input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover{
-  background-color: #EFEDED;
+  background-color: #dddddd;
 }
 
 input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
@@ -291,7 +296,7 @@ input[type=text]:placeholder, input[type=password]:placeholder {
 
 *:focus {
     outline: none;
-} 
+}
 
 #icon {
   width:60%;
@@ -309,7 +314,7 @@ input[type=text]:placeholder, input[type=password]:placeholder {
     top: 50%;
     left: 50%;
     margin: -170px 0 0 -25px;
-   
+
    }
    .service-desc .divider-header {
     margin-bottom: 30px;

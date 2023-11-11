@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <body>
   <div class="wrapper fadeInDown">
+    
     <div id="formContent">
-      <h2> Registrarse en SiLoVale</h2>
-      <main class="col-md-5">
-        <br>
-        <section class="row widgets justify-content-between"></section>
-        <form method="get" action="#">
-          <input type="submit" class="fadeIn fifth" value="Registrarme como vendedor">
-          </form>
-      </main>
-      <div class="v-line">
-        <aside class="col-md-5">
-          <form method="get" action="#">
-          <input type="submit" class="fadeIn fifth" value="Registrarme como comprador">
-          </form>
-        </aside>
+      <div>
+      <h2> Registrate como Comprador</h2>
+      <br>
+      <h3>__________________________________________________</h3>
+      <br>
+        <form>
+          <h3>Nombres:</h3>
+          <br>
+          <input type="text" id="Nombres" class="fadeIn second" name="login" placeholder="Nombres" required>
+          <br>
+          <div>
+            <h3>Apellido Paterno:</h3>
+            <input type="text" id="Apellidos" class="fadeIn second" name="login" placeholder="Apellido Paterno" required>
+            <h3>Apellido Materno:</h3>
+            <input type="text" id="Apellidos" class="fadeIn second" name="login" placeholder="Apellido Materno" required>
+          </div>
+          <h3>DNI:</h3>
+          <br>
+          <input type="text" id="RUC" class="fadeIn second" name="login" placeholder="Documento de Identidad" required>
+          <br>
+          <h3>Correo Electronico:</h3>
+          <input type="text" id="Correo" class="fadeIn second" name="login" placeholder="Correo Electrónico" required>
+          <br>
+          <h3>Contraseña:</h3>
+          <br>
+          <input type="password" id="password" class="fadeIn third" name="login" placeholder="Contraseña" required>
+          <br>
+          <div>
+          <input type="checkbox" id="tyc" name="tyc" value="false" class="andes-checkbox__input" required> Acepto los <a href="htwww.google.com">terminos y condiciones</a>
+          </div>
+          <br>
+          <input type="submit" class="fadeIn fourth" value="Crear cuenta">
+
+        </form>
       </div>
-    </div>
+      </div>
   </div>
 </body>

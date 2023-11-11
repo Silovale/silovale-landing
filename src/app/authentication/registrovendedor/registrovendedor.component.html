@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <body>
   <div class="wrapper fadeInDown">
+    
     <div id="formContent">
-      <h2> Registrarse en SiLoVale</h2>
-      <main class="col-md-5">
-        <br>
-        <section class="row widgets justify-content-between"></section>
-        <form method="get" action="#">
-          <input type="submit" class="fadeIn fifth" value="Registrarme como vendedor">
-          </form>
-      </main>
-      <div class="v-line">
-        <aside class="col-md-5">
-          <form method="get" action="#">
-          <input type="submit" class="fadeIn fifth" value="Registrarme como comprador">
-          </form>
-        </aside>
+      <div>
+      <h2> Registrate como Vendedor</h2>
+      <br>
+      <h3>__________________________________________________</h3>
+      <br>
+        <form>
+          <h3>Razon Social:</h3>
+          <br>
+          <input type="text" id="RazonSocial" class="fadeIn second" name="login" placeholder="Razon Social" required>
+          <br>
+          <h3>RUC</h3>
+          <br>
+          <input type="text" id="RUC" class="fadeIn second" name="login" placeholder="RUC" required>
+          <br>
+          <h3>Correo Electronico:</h3>
+          <input type="text" id="Correo" class="fadeIn second" name="login" placeholder="Correo Electrónico" required>
+          <br>
+          <h3>Contraseña:</h3>
+          <input type="password" id="password" class="fadeIn third" name="login" placeholder="Contraseña" required>
+          <br>
+          <div>
+          <input type="checkbox" id="tyc" name="tyc" value="false" class="andes-checkbox__input" required> Acepto los <a href="www.google.com">terminos y condiciones</a>
+          </div>
+          <br>
+          <input type="submit" class="fadeIn fourth" value="Crear cuenta">
+
+        </form>
       </div>
-    </div>
+      </div>
   </div>
 </body>
