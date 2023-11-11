@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
-import { SignComponent } from './sign/sign.component';
 import { PasswordrecoveryComponent } from './passwordrecovery/passwordrecovery.component';
+import { Passwordrecovery2Component } from './passwordrecovery2/passwordrecovery2.component';
 import { AuthenticationRoutingModule } from './authentication-routing.module';
 import { AuthenticationComponent } from './authentication.component';
 import { FormsModule } from '@angular/forms';
@@ -14,8 +14,8 @@ import { registrovendedorComponent } from './registrovendedor/registrovendedor.c
 @NgModule({
   declarations: [
     LoginComponent,
-    SignComponent,
     PasswordrecoveryComponent,
+    Passwordrecovery2Component,
     AuthenticationComponent,
     RegistroComponent,
     registrocompradorComponent,
