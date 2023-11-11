@@ -1,3 +1,11 @@
 .nav-link{
     color:#000000;
 }
+
+button[type="submit"]:hover {
+  background-color: #466195;
+  color: white;
+}
+
+
+
