@@ -5,6 +5,8 @@ import { LoginComponent } from './login/login.component';
 import { SignComponent } from './sign/sign.component';
 import { PasswordrecoveryComponent } from './passwordrecovery/passwordrecovery.component';
 import { RegistroComponent } from './registro/registro.component';
+import { registrocompradorComponent } from './registrocomprador/registrocomprador.component';
+import { registrovendedorComponent } from './registrovendedor/registrovendedor.component';
 
 const routes: Routes = [
   {
@@ -22,6 +24,14 @@ const routes: Routes = [
   {
     path: 'registro', 
     component: RegistroComponent,
+  },
+  {
+    path: 'registrocomprador', 
+    component: registrocompradorComponent,
+  },
+  {
+    path: 'registrovendedor', 
+    component: registrovendedorComponent,
   }
 ];
 
