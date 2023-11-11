@@ -7,6 +7,9 @@ import { AuthenticationRoutingModule } from './authentication-routing.module';
 import { AuthenticationComponent } from './authentication.component';
 import { FormsModule } from '@angular/forms';
 import { RegistroComponent } from './registro/registro.component';
+import { registrocompradorComponent } from './registrocomprador/registrocomprador.component';
+import { registrovendedorComponent } from './registrovendedor/registrovendedor.component';
+
 
 @NgModule({
   declarations: [
@@ -14,8 +17,11 @@ import { RegistroComponent } from './registro/registro.component';
     SignComponent,
     PasswordrecoveryComponent,
     AuthenticationComponent,
-    RegistroComponent
+    RegistroComponent,
+    registrocompradorComponent,
+    registrovendedorComponent
   ],
+
   imports: [
     CommonModule,
     AuthenticationRoutingModule,
