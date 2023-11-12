@@ -52,3 +52,54 @@ margin-left: 150px;
   border-radius: 10px;
   /* Otros estilos según tus necesidades */
 }
+
+.add{
+  display: inline-block;
+  background: #92b5d8;
+  margin-top: auto;
+  display:inline-block;
+  margin-left:115px;
+  margin-right:auto;
+  margin-bottom: 20px;
+  border: 2px solid #0d0d0d;
+
+}
+.delete{
+  display: inline-block;
+  background: #92b5d8;
+  margin-top: auto;
+  display:inline-block;
+  margin-left:auto;
+  margin-right:115px;
+  border: 2px solid #0d0d0d;
+}
+.redsocial{
+  border: 0px;
+  margin-right:30px;
+}
+.add:hover, .delete:hover{
+  background: #56baed;
+  color: white;
+}
+.service-box {
+	background: #EFEDED;
+    border-radius: 3%;
+	padding: 40px 20px;
+  margin: 10px auto;
+}
+
+.service-box:hover {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+margin-top: -10px;
+}
+
+.service-icon {
+margin-bottom: 20px;
+}
+
+.service-desc .divider-header {
+	margin-bottom: 30px;
+}
+
