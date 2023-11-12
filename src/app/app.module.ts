@@ -10,6 +10,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PublicityComponent } from './components/publicity/publicity.component';
 import { AuthenticationRoutingModule } from './authentication/authentication-routing.module';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -22,14 +23,16 @@ import { AuthenticationRoutingModule } from './authentication/authentication-rou
     BlogComponent,
     ContactComponent,
     PublicityComponent,
-   
+
 
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    AuthenticationRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        AuthenticationRoutingModule,
+        FormsModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
