@@ -1,10 +1,54 @@
+.container{
+  background: #f0e5f1;
+  border-radius: 15px;
+  padding-bottom: 150px;
+  margin-bottom: 50px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.row section{
+margin-left: 150px;
+}
+
+.btn{
+  background: #92b5d8;
+  margin-top: 40px;
+  display:block;
+  margin-left:294px;
+  margin-right:auto;
+  border: 2px solid #0d0d0d;
+  font-weight: 1000;
+}
+
+.btn:hover{
+  background: #56baed;
+  color: white;
+
+}
+
 .row main div img {
   width: 250px;
   border: 2px solid #333;
   border-radius: 15px;
+  margin-top: 50px;
 }
 
-.row {
-  display: flex;
-  justify-content: center;
+.row section div {
+  margin-bottom: 15px;
+}
+
+.row section label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.row section input {
+  width: 400px;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  /* Otros estilos según tus necesidades */
 }
