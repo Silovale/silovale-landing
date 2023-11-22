@@ -7,6 +7,35 @@
 .row {
   display: flex;
   justify-content: center;
+  margin: 20px;
+}
+
+.divredsocial{
+  display: flex;
+  justify-content: space-between;
+}
+.redsocial{
+  margin-right: 20px;
+}
+
+.verest{
+  margin: 20px;
+}
+.btn-estadistica:hover{
+  background-color: #56baed;
+}
+
+.btn-estadistica{
+  float: right;
+  margin-right: 30px;
+  padding: 10px;
+  border: 2px solid #0d0d0d;
+  border-radius: 4px;
+}
+
+.imgper{
+  cursor: pointer;
+  transition: transform 0.3s;
 }
 
 .row section{
@@ -26,7 +55,10 @@ margin-left: 150px;
 .btn:hover{
   background: #56baed;
   color: white;
+}
 
+.add, .delete{
+  border-radius: 4px;
 }
 
 .row main div img {
@@ -58,25 +90,31 @@ margin-left: 150px;
   background: #92b5d8;
   margin-top: auto;
   display:inline-block;
-  margin-left:115px;
-  margin-right:auto;
+  margin-left:250px;
   margin-bottom: 20px;
   border: 2px solid #0d0d0d;
-
+  padding: 5px;
 }
 .delete{
   display: inline-block;
   background: #92b5d8;
   margin-top: auto;
   display:inline-block;
-  margin-left:auto;
-  margin-right:115px;
+  margin-left: 20px;
   border: 2px solid #0d0d0d;
+  padding: 5px;
 }
-.redsocial{
-  border: 0px;
-  margin-right:30px;
+.divredsocial{
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;
 }
+
+.redsocial {
+  border: 2px solid rgba(255, 0, 0, 0);
+  border-radius: 50%;
+}
+
 .add:hover, .delete:hover{
   background: #56baed;
   color: white;
@@ -92,11 +130,14 @@ margin-left: 150px;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-margin-top: -10px;
+  margin-top: -10px;
 }
 
 .service-icon {
-margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .service-desc .divider-header {

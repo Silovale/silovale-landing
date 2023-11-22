@@ -6,6 +6,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { PublicityComponent } from './components/publicity/publicity.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { LoginComponent } from './authentication/login/login.component';
+import {StatisticsComponent} from "./components/statistics/statistics.component";
 
 const routes: Routes = [
   {
@@ -25,9 +26,15 @@ const routes: Routes = [
     component: PublicityComponent
   },
   {
-    path: 'login', 
+    path: 'login',
     component: LoginComponent
   },
+
+  {
+    path: 'statistics',
+    component: StatisticsComponent
+  },
+
 ];
 
 @NgModule({

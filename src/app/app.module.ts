@@ -11,6 +11,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { PublicityComponent } from './components/publicity/publicity.component';
 import { AuthenticationRoutingModule } from './authentication/authentication-routing.module';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { StatisticsComponent } from './components/statistics/statistics.component';
 
 
 
@@ -23,6 +24,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     BlogComponent,
     ContactComponent,
     PublicityComponent,
+    StatisticsComponent,
 
 
   ],
