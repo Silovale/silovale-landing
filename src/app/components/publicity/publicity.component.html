@@ -32,7 +32,7 @@
 <div class="row">
 
   <div class="verest">
-    <button class="btn-estadistica" type="submit" placement="top" ngbTooltip="Tooltip on top">VER ESTADISTICAS</button>
+    <button class="btn-estadistica" type="submit" placement="top" ngbTooltip="Tooltip on top" [routerLink]="['/statistics']">VER ESTADISTICAS</button>
   </div>
 </div>
 
@@ -72,7 +72,7 @@
       </div>
       <div class="col-md-4">
         <div class="service-box">
-          <button class="delete" type="submit">Eliminar</button>
+            <button class="delete" type="submit">Eliminar</button>
             <button class="add" type="submit">Editar</button>
           <div class="service-icon">
             <img src="./assets/imagenes/airpodspro.webp" width=300px>

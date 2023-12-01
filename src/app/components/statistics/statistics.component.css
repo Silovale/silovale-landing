@@ -1,3 +1,31 @@
-button{
-  background-color: #507ba6;
+.row-1{
+  background-color: #b9d2ec;
+  border-radius: 15px;
+  margin: 20px 100px;
+  max-width: 1200px;
+  overflow: hidden;
+
 }
+
+.estadistica{
+  /*display: flex;
+  justify-content: center;*/
+
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente los elementos */
+  height: 100vh; /* Ajusta la altura según tus necesidades */
+
+  /* Añade un margen o padding si es necesario */
+  margin: 10px;
+}
+
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .estadistica {
+    flex-direction: column; /* Cambia la dirección del eje principal a columna */
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+}
+
+
