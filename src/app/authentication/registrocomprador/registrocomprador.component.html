@@ -6,43 +6,41 @@
     <div class="formContent">
       <div>
         <h1 class="text-center"> Registrate como Comprador</h1>
-
          <h3>__________________________________________________</h3>
-
-          <form>
+          <form  (ngSubmit)="registerUser()" >
 
             <div>
               <h3>Nombres:</h3>
-              <input type="text" id="Nombres" class="fadeIn second" name="login" placeholder="Nombres" required>
+              <input type="text" id="nombre" class="fadeIn second" name="nombre" placeholder="Nombres" ngModel="newUser.nombre"  required>
             </div>
 
             <div>
               <h3>Apellido Paterno:</h3>
-              <input type="text" id="ApellidoP" class="fadeIn second" name="login" placeholder="Apellido Paterno" required>
+              <input type="text" id="ApellidoP" class="fadeIn second" name="login" placeholder="Apellido Paterno"  ngModel="newUser.ApellidoPaterno"  required>
             </div>
 
             <div>
               <h3>Apellido Materno:</h3>
-              <input type="text" id="ApellidoM" class="fadeIn second" name="login" placeholder="Apellido Materno" required>
+              <input type="text" id="ApellidoM" class="fadeIn second" name="login" placeholder="Apellido Materno" ngModel="newUser.ApellidoMaterno"  required>
             </div>
 
             <div>
               <h3>DNI:</h3>
-              <input type="text" id="RUC" class="fadeIn second" name="login" placeholder="Documento de Identidad" required>
+              <input type="text" id="RUC" class="fadeIn second" name="login" placeholder="Documento de Identidad"  ngModel="newUser.dni"  required>
             </div>
 
             <div>
               <h3>Correo Electronico:</h3>
-              <input type="text" id="Correo" class="fadeIn second" name="login" placeholder="Correo Electrónico" required>
+              <input type="text" id="Correo" class="fadeIn second" name="login" placeholder="Correo Electrónico" ngModel="newUser.correoElectronico"  required>
             </div>
 
             <div>
               <h3>Contraseña:</h3>
-              <input type="password" id="password" class="fadeIn third" name="login" placeholder="Contraseña" required  pattern=".{8,}" title="Debe tener al menos 8 caracteres">
+              <input type="password" id="password" class="fadeIn third" name="login" placeholder="Contraseña" ngModel="newUser.contrasena"  required pattern=".{8,}" title="Debe tener al menos 8 caracteres">
             </div>
 
             <div>
-            <input type="checkbox" id="tyc" name="tyc" value="false" class="andes-checkbox__input" required> Acepto los <a href="htwww.google.com">terminos y condiciones</a>
+              <input type="checkbox" id="tyc" name="tyc" value="false" class="andes-checkbox__input" ngModel="newUser.aceptar"  required > Acepto los <a href="htwww.google.com">terminos y condiciones</a>
             </div>
 
             <input type="submit" class="btnCrearcuenta" value="Crear cuenta">
