@@ -1,99 +1,119 @@
-<link rel="preconnect" href="https://rsms.me/">
-<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-<style>
-    :root {
-        font-family: 'Inter', sans-serif;
-    }
+<!doctype html>
+<html lang="en">
 
-    @supports (font-variation-settings: normal) {
-        :root {
-            font-family: 'Inter var', sans-serif;
-        }
-    }
-</style>
-<div
-    class="bg-slate-100 overflow-y-scroll w-screen h-screen antialiased text-slate-300 selection:bg-green-600 selection:text-white">
-    <div class="flex flex-col w-screen">
-        <div id="menu"
-            class="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 fixed left-0 h-screen overflow-y-scroll">
-            <div id="logo" class="my-4 px-6">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+</head>
+
+<body class="h-screen items-center justify-center" style="background: #edf2f7;">
+    <div class="h-full flex flex-col bg-gray-100 dark:bg-gray-700 shadow-xl overflow-y-scroll">
+
+        <div class="bg-white">
+            <div class="flex  rounded-b-3xl bg-white-100 dark:bg-white-700 space-y-5 flex-col items-center py-7">
+                <img class="h-28 w-28 rounded-full" src="https://api.lorem.space/image/face?w=120&h=120&hash=bart89fe"
+                    alt="User">
+                <a href="#"> <span class="text-h1">Diana Chanta</span></a>
+            </div>
+            <div class="grid px-7 py-2  items-center justify-around grid-cols-3 gap-4 divide-x divide-solid ">
+                <div class="col-span-1 flex flex-col items-center ">
+                    <span class="text-2xl font-bold dark:text-gray-500">5</span>
+                    <span class="text-lg font-medium 0">Productos</span>
+                </div>
+                <div class="col-span-1 px-3 flex flex-col items-center ">
+                    <span class="text-2xl font-bold dark:text-gray-500">
+                        Lugar</span>
+                    <span class="text-lg font-medium">Trujillo</span>
+                </div>
+                <div class="col-span-1 px-3 flex flex-col items-center ">
+                    <span class="text-2xl font-bold dark:text-gray-500">
+                        54</span>
+                    <span class="text-lg font-medium">Ventas</span>
+                </div>
             </div>
 
+        </div>
 
-            <div id="nav" class="w-full px-6">
-                <a href="statistics"
-                    class="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 bg-blue-800 hover:bg-white/5 transition ease-linear duration-150">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 text-white">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
-                        </svg>
+        <div
+            class="grid rounded-2xl divide-y divide-dashed hover:divide-solid bg-gray-500 dark:bg-gray-300 m-5 mt-15 grid-cols-3">
+            <div class="col-span-1  p-3">
+                <div class="flex flex-col items-center ">
+                    <a href="statistics"> <button class="tr-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-gray-500" fill="none"
+                                viewBox="-7 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                            <span class="text-lg font-medium">Estadísticas</span>
+                        </button></a>
+                </div>
+            </div>
 
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="text-lg font-bold leading-5 text-white">Estadísticas</span>
-                        <span class="text-sm text-white/50 hidden md:block">Data Overview</span>
-                    </div>
-
-                </a>
-                <a href="#"
-                    class="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 hover:bg-white/5 transition ease-linear duration-150">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
-                        </svg>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="text-lg text-slate-300 font-bold leading-5">Database</span>
-                        <span class="text-sm text-slate-500 hidden md:block">Database Manager</span>
-                    </div>
-                </a>
-                <a href="#"
-                    class="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 hover:bg-white/5 transition ease-linear duration-150">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
-                        </svg>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="text-lg text-slate-300 font-bold leading-5">Cloud Storage</span>
-                        <span class="text-sm text-slate-500 hidden md:block">Manage Cloud Storage</span>
-                    </div>
-                </a>
-                <a href="#"
-                    class="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 hover:bg-white/5 transition ease-linear duration-150">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
-                        </svg>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="text-lg text-slate-300 font-bold leading-5">Reports</span>
-                        <span class="text-sm text-slate-500 hidden md:block">Manage Reports</span>
-                    </div>
-                </a>
-                <a href="#"
-                    class="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 hover:bg-white/5 transition ease-linear duration-150">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
-                        </svg>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="text-lg text-slate-300 font-bold leading-5">Security</span>
-                        <span class="text-sm text-slate-500 hidden md:block">Generate Security Keys</span>
-                    </div>
-                </a>
+            <div class="col-span-1  p-3">
+                <div class="flex flex-col items-center ">
+                    <a href=""> <button class="tr-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-gray-500" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                            </svg>
+                            <span class="text-lg font-medium">Productos</span>
+                        </button></a>
+                </div>
+            </div>
+            <div class="col-span-1  p-3">
+                <div class="flex flex-col items-center ">
+                    <a href=""> <button class="tr-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-gray-500" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                            </svg>
+                            <span class="text-lg font-medium">Eventos</span>
+                        </button></a>
+                </div>
+            </div>
+            <div class="col-span-1  p-3">
+                <div class="flex flex-col items-center ">
+                    <a href="">
+                        <button class="tr-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-gray-500" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <span class="text-lg font-medium">IA ChatBot</span>
+                        </button></a>
+                </div>
+            </div>
+            <div class="col-span-1  p-3">
+                <div class="flex flex-col items-center ">
+                    <a href=""> <button class="tr-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-gray-500" fill="none"
+                                viewBox="0 0 21 21" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5" />
+                            </svg>
+                            <span class="text-lg font-medium">Compartir</span>
+                        </button></a>
+                </div>
+            </div>
+            <div class="col-span-1  p-3">
+                <div class="flex  flex-col items-center ">
+                    <a href=""> <button class="tr-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-gray-500" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z" />
+                            </svg>
+                            <span class="text-lg font-medium">Dinero</span>
+                        </button></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</body>
+
+</html>
