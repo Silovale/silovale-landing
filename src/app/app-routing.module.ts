@@ -8,6 +8,8 @@ import { AuthenticationComponent } from './authentication/authentication.compone
 import { LoginComponent } from './authentication/login/login.component';
 import {StatisticsComponent} from "./components/statistics/statistics.component";
 import {DashboardComponent} from "./components/dashboard/dashboard.component";
+import {EventsComponent} from "./components/events/events.component";
+
 
 const routes: Routes = [
   {
@@ -30,7 +32,6 @@ const routes: Routes = [
     path: 'login',
     component: LoginComponent
   },
-
   {
     path: 'statistics',
     component: StatisticsComponent
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent
+  },
+  {
+    path: 'events',
+    component: EventsComponent
   }
 ];
 
