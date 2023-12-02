@@ -13,6 +13,9 @@ import { AuthenticationRoutingModule } from './authentication/authentication-rou
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { StatisticsComponent } from './components/statistics/statistics.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ChatComponent } from './components/chat/chat.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -27,14 +30,16 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     PublicityComponent,
     StatisticsComponent,
     DashboardComponent,
-    
+    ChatComponent,
+
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         AuthenticationRoutingModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]

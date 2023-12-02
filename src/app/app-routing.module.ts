@@ -8,6 +8,7 @@ import { AuthenticationComponent } from './authentication/authentication.compone
 import { LoginComponent } from './authentication/login/login.component';
 import {StatisticsComponent} from "./components/statistics/statistics.component";
 import {DashboardComponent} from "./components/dashboard/dashboard.component";
+import { ChatComponent } from "./components/chat/chat.component";
 
 const routes: Routes = [
   {
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent
+  },
+  {
+    path: 'chatbot',
+    component: ChatComponent
   }
 ];
 
