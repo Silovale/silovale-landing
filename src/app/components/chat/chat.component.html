@@ -1,7 +1,21 @@
-<div>
-    <div *ngFor="let message of chatLog">
+<div class="chat-container">
+  <div class="chat-header">
+    <h2 class="text-center text-left">💻 SiLoValeGPT 💻</h2>
+
+    <div class="text-center">
+      <p class="chat-description">¿Tienes preguntas sobre estrategias de marketing, campañas publicitarias o cómo
+        mejorar tu presencia online? ¡Estamos aquí para ayudarte! Escribe tu pregunta y comencemos a potenciar tu
+        negocio.</p>
+    </div>
+
+  </div>
+  <div class="chat-log">
+    <div *ngFor="let message of chatLog" class="chat-message">
       <p>{{ message }}</p>
     </div>
-    <input [(ngModel)]="userInput" placeholder="Escribe un mensaje..." />
-    <button (click)="sendMessage()">Enviar</button>
   </div>
+  <div class="chat-input">
+    <input [(ngModel)]="userInput" class="input-field" placeholder="Escribe un mensaje..." />
+    <button (click)="sendMessage()" class="send-button">Enviar</button>
+  </div>
+</div>
