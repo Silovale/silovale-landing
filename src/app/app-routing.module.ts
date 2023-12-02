@@ -10,6 +10,7 @@ import {StatisticsComponent} from "./components/statistics/statistics.component"
 import {DashboardComponent} from "./components/dashboard/dashboard.component";
 import {EventsComponent} from "./components/events/events.component";
 
+import { ChatComponent } from "./components/chat/chat.component";
 
 const routes: Routes = [
   {
@@ -43,6 +44,10 @@ const routes: Routes = [
   {
     path: 'events',
     component: EventsComponent
+  },
+  {
+    path: 'chatbot',
+    component: ChatComponent
   }
 ];
 
