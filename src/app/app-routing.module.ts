@@ -7,6 +7,7 @@ import { PublicityComponent } from './components/publicity/publicity.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { LoginComponent } from './authentication/login/login.component';
 import {StatisticsComponent} from "./components/statistics/statistics.component";
+import {DashboardComponent} from "./components/dashboard/dashboard.component";
 
 const routes: Routes = [
   {
@@ -34,7 +35,10 @@ const routes: Routes = [
     path: 'statistics',
     component: StatisticsComponent
   },
-
+  {
+    path: 'dashboard',
+    component: DashboardComponent
+  }
 ];
 
 @NgModule({

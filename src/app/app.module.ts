@@ -12,6 +12,7 @@ import { PublicityComponent } from './components/publicity/publicity.component';
 import { AuthenticationRoutingModule } from './authentication/authentication-routing.module';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { StatisticsComponent } from './components/statistics/statistics.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 
@@ -25,8 +26,8 @@ import { StatisticsComponent } from './components/statistics/statistics.componen
     ContactComponent,
     PublicityComponent,
     StatisticsComponent,
-
-
+    DashboardComponent,
+    
   ],
     imports: [
         BrowserModule,
