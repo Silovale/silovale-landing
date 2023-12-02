@@ -82,3 +82,41 @@
 .chat-log::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+.botones-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Ajusta esto según el ancho deseado */
+    margin: auto;
+    padding: 20px;
+}
+
+.boton-accion {
+    background-color: #f2f2f2; /* Color de fondo de los botones */
+    border: 1px solid #d1d1d1; /* Borde de los botones */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado dentro de los botones */
+    margin-bottom: 10px; /* Espaciado entre botones */
+    cursor: pointer; /* Cursor tipo pointer */
+    text-align: left; /* Alineación del texto a la izquierda */
+    font-size: 0.9em; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+}
+
+.boton-accion:hover {
+    background-color: #e8e8e8; /* Color de fondo al pasar el mouse */
+}
+
+/* Si quieres que los botones estén en una sola fila en pantallas más grandes */
+@media (min-width: 768px) {
+    .botones-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .boton-accion {
+        flex-basis: calc(50% - 10px); /* Ajuste para que quepan dos botones por línea con un espacio en medio */
+        margin-bottom: 20px;
+    }
+}

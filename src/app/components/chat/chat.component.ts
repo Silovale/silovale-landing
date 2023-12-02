@@ -23,7 +23,7 @@ export class ChatComponent {
 
   private async getResponseFromOpenAI(input: string) {
     const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
-    const apiKey = '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'; // Reemplaza con tu clave API
+    const apiKey = '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'; // Reemplaza con tu clave API
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${apiKey}`
@@ -35,5 +35,6 @@ export class ChatComponent {
     };
 
     return this.http.post<any>(apiUrl, body, { headers }).toPromise();
+    
   }
 }
