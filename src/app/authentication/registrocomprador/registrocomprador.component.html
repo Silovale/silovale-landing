@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <body>
-  <div class="wrapper fadeInDown">
-    
-    <div id="formContent">
-      <div>
-      <h2> Registrate como Comprador</h2>
-      <br>
-      <h3>__________________________________________________</h3>
-      <br>
-        <form>
-          <h3>Nombres:</h3>
-          <br>
-          <input type="text" id="Nombres" class="fadeIn second" name="login" placeholder="Nombres" required>
-          <br>
-          <div>
-            <h3>Apellido Paterno:</h3>
-            <input type="text" id="Apellidos" class="fadeIn second" name="login" placeholder="Apellido Paterno" required>
-            <h3>Apellido Materno:</h3>
-            <input type="text" id="Apellidos" class="fadeIn second" name="login" placeholder="Apellido Materno" required>
-          </div>
-          <h3>DNI:</h3>
-          <br>
-          <input type="text" id="RUC" class="fadeIn second" name="login" placeholder="Documento de Identidad" required>
-          <br>
-          <h3>Correo Electronico:</h3>
-          <input type="text" id="Correo" class="fadeIn second" name="login" placeholder="Correo Electrónico" required>
-          <br>
-          <h3>Contraseña:</h3>
-          <br>
-          <input type="password" id="password" class="fadeIn third" name="login" placeholder="Contraseña" required>
-          <br>
-          <div>
-          <input type="checkbox" id="tyc" name="tyc" value="false" class="andes-checkbox__input" required> Acepto los <a href="htwww.google.com">terminos y condiciones</a>
-          </div>
-          <br>
-          <input type="submit" class="fadeIn fourth" value="Crear cuenta">
+<div class="container">
 
-        </form>
+    <div class="formContent">
+      <div>
+        <h1 class="text-center"> Registrate como Comprador</h1>
+
+         <h3>__________________________________________________</h3>
+
+          <form>
+
+            <div>
+              <h3>Nombres:</h3>
+              <input type="text" id="Nombres" class="fadeIn second" name="login" placeholder="Nombres" required>
+            </div>
+
+            <div>
+              <h3>Apellido Paterno:</h3>
+              <input type="text" id="ApellidoP" class="fadeIn second" name="login" placeholder="Apellido Paterno" required>
+            </div>
+
+            <div>
+              <h3>Apellido Materno:</h3>
+              <input type="text" id="ApellidoM" class="fadeIn second" name="login" placeholder="Apellido Materno" required>
+            </div>
+
+            <div>
+              <h3>DNI:</h3>
+              <input type="text" id="RUC" class="fadeIn second" name="login" placeholder="Documento de Identidad" required>
+            </div>
+
+            <div>
+              <h3>Correo Electronico:</h3>
+              <input type="text" id="Correo" class="fadeIn second" name="login" placeholder="Correo Electrónico" required>
+            </div>
+
+            <div>
+              <h3>Contraseña:</h3>
+              <input type="password" id="password" class="fadeIn third" name="login" placeholder="Contraseña" required  pattern=".{8,}" title="Debe tener al menos 8 caracteres">
+            </div>
+
+            <div>
+            <input type="checkbox" id="tyc" name="tyc" value="false" class="andes-checkbox__input" required> Acepto los <a href="htwww.google.com">terminos y condiciones</a>
+            </div>
+
+            <input type="submit" class="btnCrearcuenta" value="Crear cuenta">
+          </form>
       </div>
-      </div>
-  </div>
+    </div>
+
+</div>
 </body>
