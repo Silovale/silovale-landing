@@ -6,6 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   templateUrl: './chat.component.html',
   styleUrls: ['./chat.component.css']
 })
+
 export class ChatComponent {
   userInput = '';
   chatLog: string[] = [];

@@ -12,6 +12,8 @@ import { AuthenticationRoutingModule } from './authentication/authentication-rou
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { StatisticsComponent } from './components/statistics/statistics.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import {HttpClientModule} from "@angular/common/http";
+import {UserService} from "./service/user.service";
 
 
 
@@ -26,7 +28,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     PublicityComponent,
     StatisticsComponent,
     DashboardComponent,
-    
+
   ],
     imports: [
         BrowserModule,
