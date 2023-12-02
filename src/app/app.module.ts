@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -13,6 +12,7 @@ import { AuthenticationRoutingModule } from './authentication/authentication-rou
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { StatisticsComponent } from './components/statistics/statistics.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import {UserService} from "./service/user.service";
 
 
 
@@ -27,7 +27,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     PublicityComponent,
     StatisticsComponent,
     DashboardComponent,
-    
+
   ],
     imports: [
         BrowserModule,
@@ -36,7 +36,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
         FormsModule,
         ReactiveFormsModule
     ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

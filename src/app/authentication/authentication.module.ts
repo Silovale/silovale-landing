@@ -9,7 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { RegistroComponent } from './registro/registro.component';
 import { registrocompradorComponent } from './registrocomprador/registrocomprador.component';
 import { registrovendedorComponent } from './registrovendedor/registrovendedor.component';
-
+import {UserService} from "../service/user.service";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -22,10 +23,13 @@ import { registrovendedorComponent } from './registrovendedor/registrovendedor.c
     registrovendedorComponent
   ],
 
+  providers: [UserService],
+
   imports: [
     CommonModule,
     AuthenticationRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ]
 })
 export class AuthenticationModule { }
