@@ -9,6 +9,7 @@ import { LoginComponent } from './authentication/login/login.component';
 import {StatisticsComponent} from "./components/statistics/statistics.component";
 import {DashboardComponent} from "./components/dashboard/dashboard.component";
 import {EventsComponent} from "./components/events/events.component";
+import {MisionComponent} from "./components/mision/mision.component";
 
 import { ChatComponent } from "./components/chat/chat.component";
 
@@ -48,6 +49,10 @@ const routes: Routes = [
   {
     path: 'chatbot',
     component: ChatComponent
+  },
+  {
+    path: 'mision',
+    component: MisionComponent
   }
 ];
 
